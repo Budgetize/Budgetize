@@ -1,6 +1,3 @@
-Original App Design Project - README Template
-===
-
 # APP_NAME_HERE
 
 ## Table of Contents
