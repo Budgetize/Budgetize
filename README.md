@@ -8,7 +8,7 @@
 
 ## Overview
 ### Description
-Managing money is vital to sustaining one's livelihood. Using this app makes tracking daily transactions and ensuring that you have affordable rent and car payments easier than ever!
+Managing money is vital to sustaining one's livelihood. Using this app makes tracking daily transactions and ensuring that you are staying within your budget easier than ever!
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
