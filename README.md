@@ -8,16 +8,16 @@
 
 ## Overview
 ### Description
-Managing money is vital to sustaining ones livelehood. Ensuring that you have affordable rent and car payments will never be easier than using this app!
+Managing money is vital to sustaining one's livelihood. Using this app makes tracking daily transactions and ensuring that you have affordable rent and car payments easier than ever!
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
 - **Category:** Financial Independence 
-- **Mobile:** This app focuse on targetting individuals that need easy access to calculate their budget for rent and car payments.
+- **Mobile:** This app focuses on targeting individuals that need easy access to their daily spending and want to calculate their budget for rent and car payments.
 - **Story:** 
 - **Market:** Any individual can use this app to help with their financial journey, but individuals procuring a new car or living space will find it the most useful.
-- **Habit:** Every instance an individual has an opporunity to reevaluate their rent or car payments, the user can open the app and use it again.
-- **Scope:** Our app will get required information from the user, use some API's, and display the most relevant data for the user- that being the potential/desired rent and car payments.
+- **Habit:** Every instance an individual earns or spends money presents an opporunity for the user to enter the information into the app. This information can then be used to reevaluate the amount the user can afford to pay for rent and/or car payments. The user can open the app and use it several times a day.
+- **Scope:** Our app will get transaction information from the user, use some API's, and display the most relevant data for the user - that being the transaction history and potential/desired rent and car payments.
 
 ## Product Spec
 
