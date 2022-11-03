@@ -11,7 +11,6 @@
 Managing money is vital to sustaining one's livelihood. Using this app makes tracking daily transactions and ensuring that you are staying within your budget easier than ever!
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Financial Independence 
 - **Mobile:** This app focuses on targeting individuals that need easy access to their daily spending and want to calculate their budget for different aspects of their life (entertainment, car payments, etc).
 - **Story:** Gather user financial spending and generate recommendations based on user settings and user data.
