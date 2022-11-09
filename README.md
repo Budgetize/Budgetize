@@ -1,4 +1,4 @@
-# APP_NAME_HERE
+# Budgetize
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -65,7 +65,7 @@ Managing money is vital to sustaining one's livelihood. Using this app makes tra
 * Add transaction page -> Back to transaction history page
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
+
 <img src="Wireframe Sketch-1.png" width=600>
 <img src="Wireframe Sketch-2.png" width=600>
 
