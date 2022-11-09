@@ -69,7 +69,7 @@ Managing money is vital to sustaining one's livelihood. Using this app makes tra
 <img src="Wireframe Sketch-1.png" width=600>
 <img src="Wireframe Sketch-2.png" width=600>
 
-[PDF form](Wireframe Sketch.pdf)
+[PDF form](Wireframe%20Sketch.pdf)
 
 ### [BONUS] Digital Wireframes & Mockups
 
