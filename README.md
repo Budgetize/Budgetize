@@ -24,13 +24,19 @@ Managing money is vital to sustaining one's livelihood. Using this app makes tra
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+*	User can create a new account 
+*	User can login 
+*	User can see a financial overview 
+*	User can add expenses
+*	User can add income
+*	User can add expense details
+*	User can add income details
+*	User can view all transactions
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User can save an expense for later
+* User can save an income for later
 
 ### 2. Screen Archetypes
 
