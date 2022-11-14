@@ -46,23 +46,28 @@ Managing money is vital to sustaining one's livelihood. Using this app makes tra
 * Transaction History Page
    * Displays the information for the users transaction history. This includes deposits, withdraws, purchases, transfers, or anything the user wants! It also allows users to delete a specific transaction.
    * The navigation section will include an add page button that will allow the user to go to the transaction add page.
-* Transaction Add Page
-   * Allows users to add transactions to their account so they may view an aggregate view in the transaction history page.
-   * The navigation will allow the user to go back to the previous screen. Adding a transaction will leave the user on the same page to allow for multiple transactions to be added.
+* Income Add Page
+   * Allows users to add income to their account so they may view an aggregate view in the transaction history page.
+   * The navigation will allow the user to go back to the previous screen.
+* Expense Add Page
+   * Allows users to add expenses to their account so they may view an aggregate view in the transaction history page.
+   * The navigation will allow the user to go back to the previous screen. 
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* Add transaction page
+* Add income page
+* Add expense page
 * Transaction history page
 * Logout
 
 **Flow Navigation** (Screen to Screen)
 
 * Login -> Register page or transaction history page
-* Transaction history page -> Back to login page or to add transaction page
-* Add transaction page -> Back to transaction history page
+* Transaction history page -> Back to login page or to add income page or add expense page
+* Add income page -> Back to transaction history page
+* Add expense page -> Back to transaction history page
 
 ## Wireframes
 
@@ -78,10 +83,137 @@ Above
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
+### *User*
+
+  | Property | Type | Description|
+|---------|---------| ---------| 
+| ObjectID | String | UniqueID |
+| Username | String | Username of the user |
+| Password | String | Password of the user |
+| Expenses | List of Expenses | A list of the user’s expenses |
+| Incomes | List of Incomes | A list of the user’s incomes |
+
+### *Expense*
+
+  | Property | Type | Description|
+|---------|---------| ---------| 
+| ObjectID | String | UniqueID |
+| Author | User | Author of expense |
+| PayTo | String | Who/what was this expense to |
+| Memo | String | An optional personal note of the expense |
+| Amount | Number (Double) | The USD Dollar amount of the expense |
+| Date | Date | A date object of the expense (mm/DD/yy) |
+
+### *Income*
+
+  | Property | Type | Description|
+|---------|---------| ---------| 
+| ObjectID | String | UniqueID |
+| Author | User | Author of income |
+| Source | String | Where the income came from |
+| Memo | String | An optional personal note of the income |
+| Amount | Number (Double) | The USD Dollar amount of the income |
+| Date | Date | A date object of the income (mm/DD/yy) |
+
 ### Networking
-- [Add list of network requests by screen ]
+- Login/Register
+  - (POST) Login user
+  - ```swift
+  PFUser.logInWithUsername(inBackground: username.text!, password: password.text!) {(user, error) in
+      if user != nil {
+          self.performSegue(withIdentifier: "loginSeque", sender: nil)
+      } else {
+          print("Error: \(error?.localizedDescription ?? "OH NO")")
+      }
+  }
+  ```
+  - (POST) Register user
+    ```swift
+    let user = PFUser()
+    user.username = username.text
+    user.password = password.text
+    user.signUpInBackground {(success, error) in
+        if success {
+            self.performSegue(withIdentifier: "loginSeque", sender: nil)
+        } else {
+            print("Error \(error?.localizedDescription ?? "OH NO")")
+        }
+    }
+    ```
+- Transaction History Page
+  - (GET) Query all transactions (incomes/expenses)
+    ```swift
+    let query = PFQuery(className: "TransactionHistory")
+    query.includeKeys(["expenses", "incomes"])
+    query.limit = 100
+    query.findObjectsInBackground {(transactionHistory, error) in
+        if (transactionHistory != nil) {
+            self.transactionHistory = transactionHistory!
+            self.tableView.reloadData()
+        } else {
+            print ("Error: \(error?.localizedDescription ?? "NO")")
+        }
+    }
+    ```
+  - (DELETE) Remove a expense from history
+    ```swift
+    let query = PFQuery(className: "Expenses")
+    query.whereKey("ObjectID", equalTo: expenseID)
+    query.findObjectsInBackgroundWithBlock {
+    (objects: [AnyObject]?, error: NSError?) -> Void in
+        for object in objects {
+            object.deleteEventually()
+        }
+    }
+    ```
+  - (DELETE) Remove an income from history
+    ```swift
+    let query = PFQuery(className: "Incomes")
+    query.whereKey("ObjectID", equalTo: incomeID)
+    query.findObjectsInBackgroundWithBlock {
+    (objects: [AnyObject]?, error: NSError?) -> Void in
+        for object in objects {
+            object.deleteEventually()
+        }
+    }
+    ```
+- Income Add Page
+  - (POST) Add a new income to the users account
+    ```swift
+    let income = PFObject(className: "Incomes")
+    income["payto"] = payto
+    income["memo"] = memo
+    income["date"] = date
+    income["author"] = PFUser.current()!
+    PFUser.current()!.add(income, forKey: "incomes")
+    PFUser.current()!.saveInBackground {(success, error) in
+        if success {
+            print("Income saved")
+            self.tableView.reloadData()
+        } else {
+            print("Error \(error?.localizedDescription ?? "OH NO")")
+        }
+    }
+    ```
+- Expense Add Page
+  - (POST) Add a new expense to the users account
+    ```swift
+    let expense = PFObject(className: "Expenses")
+    expense["payto"] = payto
+    expense["memo"] = memo
+    expense["date"] = date
+    expense["author"] = PFUser.current()!
+    PFUser.current()!.add(expense, forKey: "expenses")
+    PFUser.current()!.saveInBackground {(success, error) in
+        if success {
+            print("Expense saved")
+            self.tableView.reloadData()
+        } else {
+            print("Error \(error?.localizedDescription ?? "OH NO")")
+        }
+    }
+    ```
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
