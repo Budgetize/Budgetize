@@ -35,7 +35,9 @@ Managing money is vital to sustaining one's livelihood. Using this app makes tra
 
 ### Sprint 1
 
-<img src="Sprint1.gif" alt="Sprint 1 gif (TBA)" width=600>
+Sprint 1 was cut really short because of the hurricane and extending deadlines from the last unit. We have all began our user stories on our own versions of the project and will be meeting to combine them to this repository.
+
+<img src="Sprint1.png" alt="Sprint 1 image" width=600>
 
 ## Product Spec
 
