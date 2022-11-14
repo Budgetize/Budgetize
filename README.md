@@ -23,15 +23,15 @@ Managing money is vital to sustaining one's livelihood. Using this app makes tra
 
 ### Sprint 4
 
-<img src="Sprint4.gif" alt="Sprint 4 gif (TBA)" width=600>
+<img src="Sprint4.gif" alt="Sprint 4 gif (TBA)">
 
 ### Sprint 3
 
-<img src="Sprint3.gif" alt="Sprint 3 gif (TBA)" width=600>
+<img src="Sprint3.gif" alt="Sprint 3 gif (TBA)">
 
 ### Sprint 2
 
-<img src="Sprint2.gif" alt="Sprint 2 gif (TBA)" width=600>
+<img src="Sprint2.gif" alt="Sprint 2 gif (TBA)">
 
 ### Sprint 1
 
