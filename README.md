@@ -215,5 +215,3 @@ Above
         }
     }
     ```
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
