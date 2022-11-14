@@ -18,6 +18,24 @@ Managing money is vital to sustaining one's livelihood. Using this app makes tra
 - **Habit:** Every instance an individual earns or spends money presents an opporunity for the user to enter the information into the app. This information can then be used to reevaluate the amount the user can afford to pay for rent and/or car payments. The user can open the app and use it several times a day.
 - **Scope:** Our app will get transaction information from the user, use some API's, and display the most relevant data for the user - that being the transaction history and potential/desired rent and car payments.
 
+## Build Progress
+
+### Sprint 4
+
+<img src="Sprint4.gif" alt="Sprint 4 gif (TBA)" width=600>
+
+### Sprint 3
+
+<img src="Sprint3.gif" alt="Sprint 3 gif (TBA)" width=600>
+
+### Sprint 2
+
+<img src="Sprint2.gif" alt="Sprint 2 gif (TBA)" width=600>
+
+### Sprint 1
+
+<img src="Sprint1.gif" alt="Sprint 1 gif (TBA)" width=600>
+
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
