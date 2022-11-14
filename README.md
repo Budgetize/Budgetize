@@ -120,15 +120,15 @@ Above
 ### Networking
 - Login/Register
   - (POST) Login user
-  - ```swift
-  PFUser.logInWithUsername(inBackground: username.text!, password: password.text!) {(user, error) in
-      if user != nil {
-          self.performSegue(withIdentifier: "loginSeque", sender: nil)
-      } else {
-          print("Error: \(error?.localizedDescription ?? "OH NO")")
-      }
-  }
-  ```
+    ```swift
+    PFUser.logInWithUsername(inBackground: username.text!, password: password.text!) {(user, error) in
+        if user != nil {
+            self.performSegue(withIdentifier: "loginSeque", sender: nil)
+        } else {
+            print("Error: \(error?.localizedDescription ?? "OH NO")")
+        }
+    }
+    ```
   - (POST) Register user
     ```swift
     let user = PFUser()
