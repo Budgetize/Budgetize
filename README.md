@@ -45,14 +45,16 @@ Sprint 1 was cut really short because of the hurricane and extending deadlines f
 
 **Required Must-have Stories**
 
-*	User can create a new account 
-*	User can login 
-*	User can see a financial overview 
-*	User can add expenses
-*	User can add income
-*	User can add expense details
-*	User can add income details
-*	User can view all transactions
+[]	Create repository so all developers can work on it 
+[]	Create Parse and share the information between team members
+[]	User can create a new account 
+[]	User can login 
+[]	User can see a financial overview 
+[]	User can add expenses
+[]	User can add income
+[] User can add expense details
+[]	User can add income details
+[]	User can view all transactions
 
 **Optional Nice-to-have Stories**
 
