@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budgetize" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mb-Hm-9RX">
-                                <rect key="frame" x="127" y="408" width="138" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budgetize" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mb-Hm-9RX">
+                                <rect key="frame" x="60" y="408" width="273" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,9 +27,9 @@
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Mb-Hm-9RX" secondAttribute="bottom" constant="374" id="Xns-bJ-Dxp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Mb-Hm-9RX" secondAttribute="trailing" constant="128" id="YDB-MO-HWR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Mb-Hm-9RX" secondAttribute="trailing" constant="60" id="YDB-MO-HWR"/>
                             <constraint firstItem="6Mb-Hm-9RX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="349" id="eao-F4-bbc"/>
-                            <constraint firstItem="6Mb-Hm-9RX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="i1c-KV-aSF"/>
+                            <constraint firstItem="6Mb-Hm-9RX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="i1c-KV-aSF"/>
                         </constraints>
                     </view>
                 </viewController>
