@@ -47,16 +47,19 @@ Sprint 1 was cut really short because of the hurricane and extending deadlines f
 
 - [x]	Create repository so all developers can work on it 
 - [x]	Create Parse and share the information between team members
-- [ ]	App branding (icons, introduction icon) need be created/gathered
-- [ ]	Users will be introduced to a launch screen with app branding
-- [ ]	User can create a new account 
-- [ ]	User can login 
+- [x]	Users will be introduced to a launch screen with app branding
+- [x]	User can create a new account 
+- [x]	User can login 
+- [ ]	User will be notified if that username does not exist
+- [ ]	User will be notified if that username/password is incorrect
+- [ ]	User can view all transactions
 - [ ]	User can see a financial overview 
 - [ ]	User can add expenses
 - [ ]	User can add income
-- [ ]  User can add expense details
+- [ ] User can add expense details
 - [ ]	User can add income details
 - [ ]	User can view all transactions
+- [x]	App branding (Ongoing) (icons, introduction icon) need be created/gathered
 
 **Optional Nice-to-have Stories**
 
