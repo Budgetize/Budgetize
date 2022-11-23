@@ -50,6 +50,8 @@ Sprint 1 was cut really short because of the hurricane and extending deadlines f
 - [x]	Users will be introduced to a launch screen with app branding
 - [x]	User can create a new account 
 - [x]	User can login 
+- [x]	Users can see an aesthetically pleasing login/register screen 
+- [x]	Users can see a mock-up consistent transaction history page
 - [ ]	User will be notified if that username does not exist
 - [ ]	User will be notified if that username/password is incorrect
 - [ ]	User can view all transactions
