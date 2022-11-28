@@ -42,6 +42,7 @@ class LoginViewController: UIViewController {
             if success {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
+                self.errorLabel.text = "An account already exists for this username"
                 print("Error \(error?.localizedDescription ?? "OH NO")")
             }
         }
