@@ -667,7 +667,7 @@
 		7DD28951607D9F9B9957209857552754 /* BFCancellationTokenSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFCancellationTokenSource.h; path = Bolts/Common/BFCancellationTokenSource.h; sourceTree = "<group>"; };
 		7DEF5FD7F9A90BF0C8D63F6B5950A052 /* PFConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFConstants.h; path = Parse/Parse/PFConstants.h; sourceTree = "<group>"; };
 		7DF29AA8DE57B9A7695E11627C33C190 /* BFCancellationTokenRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFCancellationTokenRegistration.m; path = Bolts/Common/BFCancellationTokenRegistration.m; sourceTree = "<group>"; };
-		7FC1E242311404E246941256B0AE81D5 /* Pods-BudgetizeApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BudgetizeApp"; path = Pods_BudgetizeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FC1E242311404E246941256B0AE81D5 /* Pods_BudgetizeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BudgetizeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		802BC9DC646D80C88FFAC0070392AF38 /* PFObjectEstimatedData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFObjectEstimatedData.h; path = Parse/Parse/Internal/Object/EstimatedData/PFObjectEstimatedData.h; sourceTree = "<group>"; };
 		80C251BC8885FBAAE8485A509B5C42DA /* PFCommandRunningConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFCommandRunningConstants.h; path = Parse/Parse/Internal/Commands/CommandRunner/PFCommandRunningConstants.h; sourceTree = "<group>"; };
 		8142E109882719A22AEB8021FE2A2CBA /* PFHTTPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFHTTPRequest.h; path = Parse/Parse/Internal/HTTPRequest/PFHTTPRequest.h; sourceTree = "<group>"; };
@@ -1412,7 +1412,7 @@
 				F84B331B5D6AAF1548DD1BB004AE5C2A /* Bolts.framework */,
 				0652F2476C7C87C6C0F6CB68072EA25F /* Parse.framework */,
 				ED7ADA84A7005589821D254428CD2D26 /* Parse.bundle */,
-				7FC1E242311404E246941256B0AE81D5 /* Pods-BudgetizeApp */,
+				7FC1E242311404E246941256B0AE81D5 /* Pods_BudgetizeApp.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1783,7 +1783,7 @@
 			);
 			name = "Pods-BudgetizeApp";
 			productName = Pods_BudgetizeApp;
-			productReference = 7FC1E242311404E246941256B0AE81D5 /* Pods-BudgetizeApp */;
+			productReference = 7FC1E242311404E246941256B0AE81D5 /* Pods_BudgetizeApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EAFFB8E885E2EDFD55062DE694143593 /* Parse-Parse */ = {
@@ -2122,7 +2122,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-BudgetizeApp/Pods-BudgetizeApp-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2305,7 +2305,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-BudgetizeApp/Pods-BudgetizeApp-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2342,7 +2342,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Bolts/Bolts-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Bolts/Bolts-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2412,7 +2412,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Bolts/Bolts-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Bolts/Bolts-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

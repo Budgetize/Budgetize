@@ -13,8 +13,12 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
+    
+    @IBOutlet weak var errorLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        errorLabel.text = ""
 
         // Do any additional setup after loading the view.
     }
@@ -24,6 +28,7 @@ class LoginViewController: UIViewController {
             if user != nil {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
+                self.errorLabel.text = "Incorrect username/password"
                 print("Error: \(error?.localizedDescription ?? "OH NO")")
             }
         }
@@ -41,6 +46,8 @@ class LoginViewController: UIViewController {
             }
         }
     }
+    
+    
     /*
     // MARK: - Navigation
 

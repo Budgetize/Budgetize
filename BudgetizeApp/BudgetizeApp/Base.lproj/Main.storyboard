@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -69,21 +69,31 @@
                                     <action selector="onSignup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAc-B3-f7w"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Incorrect username/password error message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4e-GY-7hH">
+                                <rect key="frame" x="35" y="527" width="328" height="67"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P1C-F5-tic" secondAttribute="trailing" constant="45" id="03f-Ok-ibn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A4e-GY-7hH" secondAttribute="trailing" constant="45" id="5zR-OQ-Der"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ynF-PE-1BL" secondAttribute="trailing" constant="85" id="9Nx-eu-9Bf"/>
                             <constraint firstItem="M1G-YM-Qhc" firstAttribute="top" secondItem="66C-PT-xVV" secondAttribute="bottom" constant="8" id="A20-84-SAV"/>
                             <constraint firstItem="g0w-9R-Bmw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="93" id="BBt-8b-mPT"/>
+                            <constraint firstItem="A4e-GY-7hH" firstAttribute="top" secondItem="P1C-F5-tic" secondAttribute="bottom" constant="5" id="EVm-Dx-JD7"/>
                             <constraint firstItem="EsC-Xk-SQh" firstAttribute="top" secondItem="P1C-F5-tic" secondAttribute="bottom" constant="83" id="FV1-c1-qHs"/>
                             <constraint firstItem="M1G-YM-Qhc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="Mfp-xN-gzJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ynF-PE-1BL" secondAttribute="bottom" constant="100" id="Qq0-Ei-kka"/>
                             <constraint firstItem="EsC-Xk-SQh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="S5O-Pg-gPn"/>
                             <constraint firstItem="g0w-9R-Bmw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="SVf-zz-n4T"/>
                             <constraint firstItem="P1C-F5-tic" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="Tac-NE-xsE"/>
+                            <constraint firstItem="EsC-Xk-SQh" firstAttribute="top" secondItem="A4e-GY-7hH" secondAttribute="bottom" constant="25" id="cMW-xe-3CH"/>
                             <constraint firstItem="66C-PT-xVV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="cet-oh-0xf"/>
+                            <constraint firstItem="A4e-GY-7hH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="gN8-Rc-b6g"/>
                             <constraint firstItem="P1C-F5-tic" firstAttribute="top" secondItem="3i8-WL-fRY" secondAttribute="bottom" constant="8" id="gjE-iU-LWs"/>
                             <constraint firstItem="ynF-PE-1BL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="gug-I4-eYL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g0w-9R-Bmw" secondAttribute="trailing" constant="75" id="heX-Br-U5Y"/>
@@ -96,6 +106,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="errorLabel" destination="A4e-GY-7hH" id="Jem-Au-aek"/>
                         <outlet property="passwordTextField" destination="P1C-F5-tic" id="vC7-Ow-lHj"/>
                         <outlet property="usernameTextField" destination="M1G-YM-Qhc" id="M08-Ev-a2i"/>
                         <segue destination="c30-YN-7f3" kind="presentation" identifier="loginSegue" id="l4q-54-wDc"/>
