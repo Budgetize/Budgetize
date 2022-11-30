@@ -6,6 +6,8 @@
 3. [Product Spec](#Product-Spec)
 4. [Wireframes](#Wireframes)
 5. [Schema](#Schema)
+6. [Project Board] https://github.com/orgs/Budgetize/projects/1
+
 
 ## Overview
 ### Description
