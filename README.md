@@ -54,8 +54,10 @@ Sprint 1 was cut really short because of the hurricane and extending deadlines f
 - [x]	User can login 
 - [x]	Users can see an aesthetically pleasing login/register screen 
 - [x]	Users can see a mock-up consistent transaction history page
-- [ ]	User will be notified if that username does not exist
-- [ ]	User will be notified if that username/password is incorrect
+- [x]	User will be notified if that username does not exist
+- [x]	User will be notified if that username/password is incorrect
+- [x]	User can select start date
+- [x] User can select end date
 - [ ]	User can view all transactions
 - [ ]	User can see a financial overview 
 - [ ]	User can add expenses
