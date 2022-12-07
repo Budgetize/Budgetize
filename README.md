@@ -58,10 +58,12 @@ Sprint 1 was cut really short because of the hurricane and extending deadlines f
 - [x]	User will be notified if that username/password is incorrect
 - [x]	User can select start date
 - [x] User can select end date
+- [x] User can see the add page to add an income or expense
+- [x]	User can add expenses
+- [x]	User can add income
+- [x]	User authentication fixed (see details in project board for more info!)
 - [ ]	User can view all transactions
 - [ ]	User can see a financial overview 
-- [ ]	User can add expenses
-- [ ]	User can add income
 - [ ] User can add expense details
 - [ ]	User can add income details
 - [ ]	User can view all transactions
