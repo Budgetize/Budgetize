@@ -6,12 +6,19 @@
 //
 
 import UIKit
+import Parse
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var startDateTextField: UITextField!
 
     @IBOutlet weak var endDateTextField: UITextField!
+    
+    @IBOutlet weak var Balance: UILabel!
+    
+    @IBOutlet weak var income: UILabel!
+    
+    @IBOutlet weak var expenses: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +41,9 @@ class HomeViewController: UIViewController {
         endDateTextField.text = formatDate(date: Date()) // today's Date
 
         // Do any additional setup after loading the view.
+        
+        expenses.text = "25.35"
+        income.text = "95.0"
     }
     
     @objc func startDateChange(startDatePicker: UIDatePicker){
